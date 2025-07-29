@@ -2,7 +2,7 @@
 
 ## 1. Introduction and Purpose
 
-This document outlines the plan and procedures for Poolside as an example to manage and respond to information security incidents. The purpose of this plan is to ensure a swift, effective, and coordinated response to limit the impact of any security breach, minimize disruption to business operations, and reduce financial and reputational damage. This plan applies to all employees, contractors, and third-party vendors who have access to Poolside's information systems.
+This document outlines the plan and procedures for Wiz as an example to manage and respond to information security incidents. The purpose of this plan is to ensure a swift, effective, and coordinated response to limit the impact of any security breach, minimize disruption to business operations, and reduce financial and reputational damage. This plan applies to all employees, contractors, and third-party vendors who have access to Wiz's information systems.
 
 ---
 
@@ -27,10 +27,10 @@ Incidents will be classified to prioritize response efforts.
 
 | Level | Severity | Description | Examples |
 | :--- | :--- | :--- | :--- |
-| **1** | **Critical** | Poses an imminent threat to the business. Significant data loss, service unavailability, or reputational damage is occurring or is highly likely. | - Ransomware outbreak on critical systems<br>- Confirmed breach of sensitive customer data (PII, PHI)<br>- Widespread production outage |
-| **2** | **High** | A serious incident that could escalate to Critical if not addressed immediately. May involve a limited breach or significant system degradation. | - Malware infection on multiple user endpoints<br>- Successful phishing attack against a privileged user<br>- Denial-of-Service (DoS) attack impacting performance |
-| **3** | **Medium** | An incident with potential for impact but is currently contained or limited in scope. | - A single endpoint infected with malware<br>- Suspicious activity detected on a non-critical server<br>- A lost or stolen employee laptop |
-| **4** | **Low** | A minor security event that requires investigation but poses no immediate threat. | - A policy violation<br>- Unsuccessful port scan detected by a firewall |
+| **1** | **Critical** | Poses an imminent threat to the business. Significant data loss, service unavailability, or reputational damage is occurring or is highly likely. | - Ransomware outbreak on critical systems - Confirmed breach of sensitive customer data (PII, PHI) - Widespread production outage |
+| **2** | **High** | A serious incident that could escalate to Critical if not addressed immediately. May involve a limited breach or significant system degradation. | - Malware infection on multiple user endpoints - Successful phishing attack against a privileged user - Denial-of-Service (DoS) attack impacting performance |
+| **3** | **Medium** | An incident with potential for impact but is currently contained or limited in scope. | - A single endpoint infected with malware - Suspicious activity detected on a non-critical server - A lost or stolen employee laptop |
+| **4** | **Low** | A minor security event that requires investigation but poses no immediate threat. | - A policy violation - Unsuccessful port scan detected by a firewall |
 
 ---
 

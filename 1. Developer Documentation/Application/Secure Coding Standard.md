@@ -1,6 +1,6 @@
 # Secure Coding Standard for Developers
 
-As engineers at Poolside, they are first line of defense for their security. Writing secure code is not a separate task—it is a fundamental part of writing high-quality code.
+As engineers at Wiz, they are first line of defense for their security. Writing secure code is not a separate task - it is a fundamental part of writing high-quality code.
 
 This document provides the essential security standards that all developers are expected to follow. Adhering to these guidelines helps us:
 
@@ -21,37 +21,37 @@ This document provides the essential security standards that all developers are 
 
 ## Key Development Standards
 1. Secrets Management
-<b>DO NOT</b> hardcode secrets (API keys, passwords, database credentials, tokens) in your code, configuration files, or environment variables.
+DO NOT hardcode secrets (API keys, passwords, database credentials, tokens) in your code, configuration files, or environment variables.
 
-2. <b>DO</b> use the company's approved secrets management tool (e.g., AWS Secrets Manager, HashiCorp Vault) to store and retrieve all secrets programmatically.
+2. DO use the company's approved secrets management tool (e.g., AWS Secrets Manager, HashiCorp Vault) to store and retrieve all secrets programmatically.
 Relevant Compliance: SOC 2: CC6.1; ISO 27001: A.9.4.1
 
 3. Input Validation and Output Encoding
-<b>DO</b> validate all incoming data for type, length, format, and range on the server-side.
+DO validate all incoming data for type, length, format, and range on the server-side.
 
-4. <b>DO</b>use parameterized queries or prepared statements to prevent SQL injection. Never construct database queries by concatenating strings.
+4. DOuse parameterized queries or prepared statements to prevent SQL injection. Never construct database queries by concatenating strings.
 
-5. <b>DO</b> properly encode all data before rendering it in a user's browser to prevent Cross-Site Scripting (XSS). Use the encoding functions provided by your framework.
+5. DO properly encode all data before rendering it in a user's browser to prevent Cross-Site Scripting (XSS). Use the encoding functions provided by your framework.
 Relevant Compliance: SOC 2: CC7.2; ISO 27001: A.14.2.5
 
 6. Dependency Management
-<b>DO</b> use the Software Composition Analysis (SCA) tool integrated into the CI/CD pipeline to scan for vulnerabilities in your third-party libraries.
+DO use the Software Composition Analysis (SCA) tool integrated into the CI/CD pipeline to scan for vulnerabilities in your third-party libraries.
 
-7. <b>DO NOT </b> use libraries with known critical or high-severity vulnerabilities.
+7. DO NOT  use libraries with known critical or high-severity vulnerabilities.
 
-8. <b> DO </b> keep  dependencies up to date and follow the company's policy for patching vulnerabilities within the required timeframe.
+8.  DO  keep  dependencies up to date and follow the company's policy for patching vulnerabilities within the required timeframe.
 Relevant Compliance: SOC 2: CC9.2; ISO 27001: A.12.6.1
 
 9. Authentication and Authorization
-<b> DO </b> use the company's standard authentication services. Do not build your own authentication.
+ DO  use the company's standard authentication services. Do not build your own authentication.
 
-10. <b> DO </b> enforce authorization checks on every request for a protected resource, ensuring the authenticated user has the explicit right to perform that action.
+10.  DO  enforce authorization checks on every request for a protected resource, ensuring the authenticated user has the explicit right to perform that action.
 Relevant Compliance: SOC 2: CC6.1, CC6.3; ISO 27001: A.9.2, A.9.1.2
 
 11. Secure Logging
-<b> DO  </b> log all security-relevant events, such as successful/failed logins, access control decisions, and significant transactions.
+ DO   log all security-relevant events, such as successful/failed logins, access control decisions, and significant transactions.
 
-12. <b> DO NOT </b> log sensitive data, such as passwords, session tokens, API keys, or personally identifiable information (PII), in plain text.
+12.  DO NOT  log sensitive data, such as passwords, session tokens, API keys, or personally identifiable information (PII), in plain text.
 Relevant Compliance: SOC 2: CC7.3; ISO 27001: A.12.4.1
 
 ### Our Commitment to You

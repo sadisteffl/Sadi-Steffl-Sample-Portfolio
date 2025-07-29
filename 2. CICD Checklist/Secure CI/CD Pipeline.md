@@ -24,34 +24,34 @@ Beyond internal tooling, a mature security program embraces the external securit
 
 | Control ID | Severity | Best Practice / Control | Description | ISO 27001 Annex A | SOC 2 Common Criteria (CC) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| CICD-AC-01 | High | Enforce Branch Protection Rules | [cite_start]Protect important branches (e.g., main, develop) by requiring status checks to pass before merging, requiring pull request reviews, and restricting who can push to the branch. [cite: 7] | [cite_start]A.8.27, A.8.28 [cite: 7] | [cite_start]CC3.2, CC6.1 [cite: 7] |
-| CICD-AC-02 | Critical | Use Least-Privilege for GITHUB_TOKEN | [cite_start]By default, the GITHUB_TOKEN has broad permissions. [cite: 7] [cite_start]Scope its permissions down to the minimum required for each specific job in workflow files. [cite: 8] | [cite_start]A.5.15, A.8.2 [cite: 7] | [cite_start]CC6.1, CC6.5 [cite: 7] |
-| CICD-AC-03 | Medium | Require Signed Commits | [cite_start]Enforce commit signing on protected branches to ensure that code changes originate from a trusted and verified source. [cite: 8] | [cite_start]A.8.27 [cite: 8] | [cite_start]CC3.2 [cite: 8] |
-| CICD-AC-04 | Critical | Secure Self-Hosted Runners | [cite_start]If using self-hosted runners, ensure they are isolated, hardened, patched, and not used for public repositories to prevent code execution vulnerabilities. [cite: 8] | [cite_start]A.8.7, A.8.8, A.8.23 [cite: 8] | [cite_start]CC7.1 [cite: 8] |
+| CICD-AC-01 | High | Enforce Branch Protection Rules | Protect important branches (e.g., main, develop) by requiring status checks to pass before merging, requiring pull request reviews, and restricting who can push to the branch. | A.8.27, A.8.28| CC3.2, CC6.1|
+| CICD-AC-02 | Critical | Use Least-Privilege for GITHUB_TOKEN | By default, the GITHUB_TOKEN has broad permissions.Scope its permissions down to the minimum required for each specific job in workflow files.| A.5.15, A.8.2| CC6.1, CC6.5|
+| CICD-AC-03 | Medium | Require Signed Commits | Enforce commit signing on protected branches to ensure that code changes originate from a trusted and verified source.| A.8.27| CC3.2|
+| CICD-AC-04 | Critical | Secure Self-Hosted Runners | If using self-hosted runners, ensure they are isolated, hardened, patched, and not used for public repositories to prevent code execution vulnerabilities.| A.8.7, A.8.8, A.8.23| CC7.1|
 
 ### Secret Management
 
 | Control ID | Severity | Best Practice / Control | Description | ISO 27001 Annex A | SOC 2 Common Criteria (CC) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| CICD-SM-01 | Critical | Use Encrypted Secrets | [cite_start]Store all secrets (API keys, tokens, passwords) as encrypted secrets in GitHub Actions or a dedicated secrets manager (like AWS Secrets Manager or HashiCorp Vault). [cite: 11] [cite_start]Never store secrets in plaintext in code or workflow files. [cite: 11] | [cite_start]A.5.17, A.8.24 [cite: 11] | [cite_start]CC6.1, CC6.7 [cite: 11] |
-| CICD-SM-02 | High | Limit Secret Exposure | [cite_start]Configure workflows to only expose secrets to the specific steps that need them. [cite: 11] [cite_start]Avoid printing secrets to logs, even in masked form. [cite: 11] | [cite_start]A.8.2, A.8.25 [cite: 11] | [cite_start]CC6.1, Confidentiality [cite: 11] |
-| CICD-SM-03 | High | Rotate Secrets Regularly | [cite_start]Implement a process for regularly rotating all credentials and secrets used in the CI/CD pipeline. [cite: 11] | [cite_start]A.5.17 [cite: 11] | [cite_start]CC6.1, CC6.3 [cite: 11] |
+| CICD-SM-01 | Critical | Use Encrypted Secrets | Store all secrets (API keys, tokens, passwords) as encrypted secrets in GitHub Actions or a dedicated secrets manager (like AWS Secrets Manager or HashiCorp Vault). Never store secrets in plaintext in code or workflow files. | A.5.17, A.8.24 | CC6.1, CC6.7 |
+| CICD-SM-02 | High | Limit Secret Exposure | Configure workflows to only expose secrets to the specific steps that need them. Avoid printing secrets to logs, even in masked form. | A.8.2, A.8.25 | CC6.1, Confidentiality |
+| CICD-SM-03 | High | Rotate Secrets Regularly | Implement a process for regularly rotating all credentials and secrets used in the CI/CD pipeline. | A.5.17 | CC6.1, CC6.3 |
 
 ### Code & Dependency Scanning
 
 | Control ID | Severity | Best Practice / Control | Description | ISO 27001 Annex A | SOC 2 Common Criteria (CC) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| CICD-SCAN-01 | High | Static Application Security Testing (SAST) | [cite_start]Integrate SAST tools (like GitHub CodeQL) into the pipeline to scan source code for security vulnerabilities on every pull request. [cite: 13] | [cite_start]A.8.28 [cite: 13] | [cite_start]CC7.1 [cite: 13] |
-| CICD-SCAN-02 | High | Software Composition Analysis (SCA) | [cite_start]Use tools like Dependabot to scan for known vulnerabilities in third-party libraries and dependencies. [cite: 13] [cite_start]Automate pull requests to update vulnerable packages. [cite: 13] | [cite_start]A.8.7, A.8.29 [cite: 13] | [cite_start]CC7.1 [cite: 13] |
-| CICD-SCAN-03 | Critical | Secret Scanning | [cite_start]Enable GitHub's secret scanning feature to automatically detect exposed credentials that have been accidentally committed to the repository. [cite: 13, 14] | [cite_start]A.8.28 [cite: 13] | [cite_start]CC7.1 [cite: 13] |
-| CICD-SCAN-04 | Medium | Dynamic Application Security Testing (DAST) | [cite_start]For web applications, integrate DAST tools to scan the running application in a staging environment for vulnerabilities before deploying to production. [cite: 14] | [cite_start]A.8.29 [cite: 14] | [cite_start]CC7.1 [cite: 14] |
-| CICD-SCAN-05 | High | Container Image Scanning | [cite_start]If using containers, scan container images for known OS and application vulnerabilities before pushing them to a registry or deploying them. [cite: 14] | [cite_start]A.8.7, A.8.28 [cite: 14] | [cite_start]CC7.1 [cite: 14] |
+| CICD-SCAN-01 | High | Static Application Security Testing (SAST) | Integrate SAST tools (like GitHub CodeQL) into the pipeline to scan source code for security vulnerabilities on every pull request.| A.8.28| CC7.1|
+| CICD-SCAN-02 | High | Software Composition Analysis (SCA) | Use tools like Dependabot to scan for known vulnerabilities in third-party libraries and dependencies.Automate pull requests to update vulnerable packages.| A.8.7, A.8.29| CC7.1|
+| CICD-SCAN-03 | Critical | Secret Scanning | Enable GitHub's secret scanning feature to automatically detect exposed credentials that have been accidentally committed to the repository. | A.8.28| CC7.1|
+| CICD-SCAN-04 | Medium | Dynamic Application Security Testing (DAST) | For web applications, integrate DAST tools to scan the running application in a staging environment for vulnerabilities before deploying to production. | A.8.29 | CC7.1 |
+| CICD-SCAN-05 | High | Container Image Scanning | If using containers, scan container images for known OS and application vulnerabilities before pushing them to a registry or deploying them. | A.8.7, A.8.28 | CC7.1 |
 
 ### Pipeline Integrity & Auditing
 
 | Control ID | Severity | Best Practice / Control | Description | ISO 27001 Annex A | SOC 2 Common Criteria (CC) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| CICD-PI-01 | High | Pin Third-Party Actions | [cite_start]Pin GitHub Actions to a specific commit SHA instead of a branch or tag. [cite: 16, 17] [cite_start]This prevents a malicious update to the action from being automatically pulled into the workflow. [cite: 17] | [cite_start]A.8.27, A.5.21 [cite: 16] | [cite_start]CC3.2, CC7.1 [cite: 16] |
-| CICD-PI-02 | High | Audit Logging & Monitoring | [cite_start]Ensure comprehensive audit logs for the GitHub organization are enabled and forwarded to a central SIEM. [cite: 17] [cite_start]Monitor for suspicious activity like changes to branch protection rules or unexpected workflow runs. [cite: 17] | [cite_start]A.8.15, A.8.16 [cite: 17] | [cite_start]CC7.2 [cite: 17] |
-| CICD-PI-03 | High | Secure Build Artifacts | [cite_start]Ensure that build artifacts are stored securely (e.g., in an encrypted S3 bucket or Artifactory) and that access is restricted. [cite: 17, 18] [cite_start]Consider signing artifacts to ensure their integrity. [cite: 18] | [cite_start]A.8.9, A.8.24 [cite: 17] | [cite_start]CC3.2, CC6.7 [cite: 17] |
-| CICD-PI-04 | Medium | Require Workflow Approval for External Contributors | [cite_start]For public repositories, enable the setting that requires a manual approval from a maintainer before a workflow from a first-time contributor is run. [cite: 18] | [cite_start]A.8.27 [cite: 18] | [cite_start]CC3.2 [cite: 18] |
+| CICD-PI-01 | High | Pin Third-Party Actions | Pin GitHub Actions to a specific commit SHA instead of a branch or tag. This prevents a malicious update to the action from being automatically pulled into the workflow. | A.8.27, A.5.21| CC3.2, CC7.1|
+| CICD-PI-02 | High | Audit Logging & Monitoring | Ensure comprehensive audit logs for the GitHub organization are enabled and forwarded to a central SIEM. Monitor for suspicious activity like changes to branch protection rules or unexpected workflow runs. | A.8.15, A.8.16 | CC7.2 |
+| CICD-PI-03 | High | Secure Build Artifacts | Ensure that build artifacts are stored securely (e.g., in an encrypted S3 bucket or Artifactory) and that access is restricted. Consider signing artifacts to ensure their integrity. | A.8.9, A.8.24 | CC3.2, CC6.7 |
+| CICD-PI-04 | Medium | Require Workflow Approval for External Contributors | For public repositories, enable the setting that requires a manual approval from a maintainer before a workflow from a first-time contributor is run. | A.8.27 | CC3.2 |

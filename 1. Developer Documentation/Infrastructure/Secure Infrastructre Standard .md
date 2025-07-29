@@ -1,5 +1,5 @@
 # AWS Security Controls Map for ISO 27001, SOC 2 and  AWS Best Practices Frameworks
-<b> This list is limited just to AWS IAM and not IAM audit controls across the company. 
+This list is limited just to AWS IAM and not IAM audit controls across the company. 
 
 ## Introduction
 This document provides a detailed mapping of AWS security best practices to the control requirements of the ISO/IEC 27001:2022 standard and the AICPA's SOC 2 Trust Services Criteria. The controls are organized by AWS service and include a severity rating to provide a clear, actionable guide for architects, engineers, and compliance professionals. This would be posted on an internal site with a list of every AWS resource possible so developers have a guide for what is expected of every resource. Of course, this is a sample but I would provide the extensive list once hired. 

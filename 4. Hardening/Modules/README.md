@@ -2,7 +2,7 @@
 Automating AWS Account Hardening for Scalable Security
 
 ## The Challenge: Consistent Security at Scale
-As Poolside grow's, they will be provisioning new AWS accounts for different environments, projects, and services. A critical challenge is ensuring that every new account has a strong, consistent security baseline from the moment it's created. Manually configuring security settings, especially for user authentication, is error-prone, inefficient, and leads to configuration drift, creating potential security gaps.
+As Wiz grow's, they will be provisioning new AWS accounts for different environments, projects, and services. A critical challenge is ensuring that every new account has a strong, consistent security baseline from the moment it's created. Manually configuring security settings, especially for user authentication, is error-prone, inefficient, and leads to configuration drift, creating potential security gaps.
 
 My goal is to automate this process to guarantee that every IAM user in any new AWS account is governed by a robust password policy without requiring manual intervention.
 

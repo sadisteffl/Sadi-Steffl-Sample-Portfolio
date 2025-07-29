@@ -1,6 +1,6 @@
-# Overview: Sadi's Guidebook to Shifting Left for Poolside.ai
+# Overview: Sadi's Guidebook to Shifting Left for Wiz
 
-Hello PoolsideAI team. Following our initial conversation, I was inspired by your mission to build at velocity. This "Sadi's Guidebook to Shifting Left" is a tangible introduction to my security philosophy: to empower engineers by making secure choices the easiest choices.
+Hello Wiz team. Following our initial conversation, I was inspired by your mission to build at velocity. This "Sadi's Guidebook to Shifting Left" is a tangible introduction to my security philosophy: to empower engineers by making secure choices the easiest choices.
 
 My approach uses automation to embed security directly into development workflows, reducing manual overhead and accelerating launch times. The code within this repo is primarily Terraform and Kubernetes YAML, managed via Git, reflecting the tools required for the role from the website, in which I have extensive experience. Critically, please keep in mind that all of the following directories were built with the foundational requirements of ISO and SOC 2 standards in mind.
 
@@ -10,15 +10,15 @@ This guidebook is my blueprint for how security can be a strategic partner to en
 
 ## 1. Documentation
 
-This repo is designed to give engineers a clear, actionable foundation for building secure, compliant, and resilient systems—across both application code and infrastructure.
+This repo is designed to give engineers a clear, actionable foundation for building secure, compliant, and resilient systems - across both application code and infrastructure.
 
 ### Application
 
-This directory provides a practical overview of secure development standards for Poolside's application code, offering guidance for engineers to build security into every stage of the development lifecycle. It covers key areas such as secrets management using approved tools, secure dependency management using CI-integrated SCA tools, robust authentication and authorization practices, and safe logging standards. These are just a few examples of what should be posted on the intranet site. The goal is to make secure coding seamless and effective from day one. Security is a shared responsibility, and this resource—along with supporting tools, training, and examples—is here to help engineers write secure, compliant, and resilient code by default.
+This directory provides a practical overview of secure development standards for Wiz's application code, offering guidance for engineers to build security into every stage of the development lifecycle. It covers key areas such as secrets management using approved tools, secure dependency management using CI-integrated SCA tools, robust authentication and authorization practices, and safe logging standards. These are just a few examples of what should be posted on the intranet site. The goal is to make secure coding seamless and effective from day one. Security is a shared responsibility, and this resource - along with supporting tools, training, and examples - is here to help engineers write secure, compliant, and resilient code by default.
 
 ### Infrastructure
 
-This directory outlines a mapping of AWS security best practices—specifically focused on AWS. It organizes controls by AWS service, includes severity ratings, and aligns each practice with compliance requirements to help teams build secure and compliant infrastructure from the ground up. While this version highlights a couple of standard practices, the full version will include detailed expectations for every AWS resource, giving developers a clear, actionable guide to meet both internal standards and external audit frameworks.
+This directory outlines a mapping of AWS security best practices - specifically focused on AWS. It organizes controls by AWS service, includes severity ratings, and aligns each practice with compliance requirements to help teams build secure and compliant infrastructure from the ground up. While this version highlights a couple of standard practices, the full version will include detailed expectations for every AWS resource, giving developers a clear, actionable guide to meet both internal standards and external audit frameworks.
 
 Engineers can use this guide to:
 
@@ -90,30 +90,30 @@ I have also identified several areas that are intentionally not fully built out 
 
 #### Threat Modeling
 
-Threat modeling is crucial because it helps Poolside find security problems before building anything. Including threat modeling from the start is important because it's dramatically cheaper and more effective to design security in from the beginning than to try and add it on later. It helps build a fundamentally secure application, rather than just patching holes after they've already been built.
+Threat modeling is crucial because it helps Wiz find security problems before building anything. Including threat modeling from the start is important because it's dramatically cheaper and more effective to design security in from the beginning than to try and add it on later. It helps build a fundamentally secure application, rather than just patching holes after they've already been built.
 
 #### Data Security & Governance
 Data is the lifeblood of an AI company, so its security and governance are a top-level priority, adding a strategic layer beyond foundational controls like Macie and encryption. A robust data governance program is critical for building and maintaining trust. This starts with clear data classification policies to ensure we understand our data's sensitivity and apply the right protections. It also includes disciplined data lifecycle management to responsibly handle information from creation to secure deletion, which is crucial for minimizing risk when managing vast training datasets. Finally, collaborating with the privacy team on Data Protection Impact Assessments (DPIAs) is non-negotiable. This allows us to proactively identify and mitigate privacy risks before a product launch, ensuring regulatory compliance and demonstrating a deep commitment to customer trust
 
 #### Runtime Security
 
-Runtime security is crucial because it protects Poolside's application while it's actually running in a live environment. No matter how well the design and scan of the code are before deployment, it's impossible to predict every possible threat. A brand-new vulnerability might be discovered, or an attacker could find a clever way to exploit a minor misconfiguration that only appears in the live system.
+Runtime security is crucial because it protects Wiz's application while it's actually running in a live environment. No matter how well the design and scan of the code are before deployment, it's impossible to predict every possible threat. A brand-new vulnerability might be discovered, or an attacker could find a clever way to exploit a minor misconfiguration that only appears in the live system.
 
-Including runtime security from the start is important because it acts as a final and most critical layer of defense. It actively monitors for suspicious behavior—like a container trying to access a file it shouldn't or an application making unexpected network connections—and can block these threats in real-time. Without it, Poolside would have a major blind spot and be vulnerable to attacks that static checks and firewalls simply cannot see.
+Including runtime security from the start is important because it acts as a final and most critical layer of defense. It actively monitors for suspicious behavior - like a container trying to access a file it shouldn't or an application making unexpected network connections - and can block these threats in real-time. Without it, Wiz would have a major blind spot and be vulnerable to attacks that static checks and firewalls simply cannot see.
 
 ---
 
 # Conclusion
 
-This guidebook is more than a collection of configurations and code; it's a practical reflection of my core philosophy. I believe that the concepts we learn and the people we meet within our community have a profound effect on our ability to address the world around us. The most successful people—and the most successful companies—are those who accumulate diverse skills, learn from their mistakes, and are always willing to innovate.
+This guidebook is more than a collection of configurations and code; it's a practical reflection of my core philosophy. I believe that the concepts we learn and the people we meet within our community have a profound effect on our ability to address the world around us. The most successful people - and the most successful companies - are those who accumulate diverse skills, learn from their mistakes, and are always willing to innovate.
 
 My approach to security is guided by a simple, personal principle: every day is a chance to make things better than they were the day before. I see mistakes and vulnerabilities not as failures, but as opportunities for growth. This is why I am so passionate about the "shift-left" model; it's a software-led initiative that bakes learning and improvement directly into the development process. For me, a successful day is one where I've learned something new while helping my team build more secure, resilient systems.
 
-This mindset directly aligns with Poolside's mission to drive progress through software. To build world-changing AI, the underlying security function must be a catalyst, not an obstacle. It must be as agile, automated, and forward-thinking as the technology it protects. My goal is to help build that function—one that empowers engineers, automates compliance, and turns every challenge into a chance to improve.
+This mindset directly aligns with Wiz's mission to drive progress through software. To build world-changing AI, the underlying security function must be a catalyst, not an obstacle. It must be as agile, automated, and forward-thinking as the technology it protects. My goal is to help build that function - one that empowers engineers, automates compliance, and turns every challenge into a chance to improve.
 
 ### Business Opportunities
 
-I propose a strategic enhancement to the Poolside platform through a new "Compliance & Security Assurance" module, which I think could be an add-on SaaS. This feature would proactively scan a customer's environment to identify gaps against key ISO and SOC 2 controls, and before implementing any changes, it would conduct a pre-remediation impact analysis to predict and prevent potential operational disruptions. Following a successful validation, the system would offer automated or one-click remediation to resolve the identified deficiencies. This powerful functionality could be monetized through a premium subscription or add-on license, creating a new revenue stream while providing a clear return on investment for Poolside's customers by reducing risk, saving man-hours, and streamlining their audit readiness. Databricks is already doing this but obviously they cannot see the environment and provide the prompts to code it out, hence a 2.0 version where we could capitalize.
+I propose a strategic enhancement to the Wiz platform through a new "Compliance & Security Assurance" module, which I think could be an add-on SaaS. This feature would proactively scan a customer's environment to identify gaps against key ISO and SOC 2 controls, and before implementing any changes, it would conduct a pre-remediation impact analysis to predict and prevent potential operational disruptions. Following a successful validation, the system would offer automated or one-click remediation to resolve the identified deficiencies. This powerful functionality could be monetized through a premium subscription or add-on license, creating a new revenue stream while providing a clear return on investment for Wiz's customers by reducing risk, saving man-hours, and streamlining their audit readiness. Databricks is already doing this but obviously they cannot see the environment and provide the prompts to code it out, hence a 2.0 version where we could capitalize.
 
 
 [https://www.databricks.com/blog/announcing-databricks-ai-security-framework-20](https://www.databricks.com/blog/announcing-databricks-ai-security-framework-20)
