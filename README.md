@@ -1,4 +1,4 @@
-# Overview: Sadi's Guidebook to Shifting Left for Wiz
+# Overview: Sadi's Guidebook to Shifting Left
 
 Hello Wiz team. Following our initial conversation, I was inspired by your mission to build at velocity. This "Sadi's Guidebook to Shifting Left" is a tangible introduction to my security philosophy: to empower engineers by making secure choices the easiest choices.
 
