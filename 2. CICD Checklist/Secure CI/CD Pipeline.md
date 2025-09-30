@@ -5,7 +5,7 @@ I've drafted this document to outline a robust and secure CI/CD pipeline strateg
 ## Introduction: A Security-First Approach
 A modern CI/CD pipeline is the engine of a software company. By building a strong security foundation into it from day one, we can innovate quickly while minimizing risk. This document provides a checklist of foundational security practices for a GitHub-based pipeline.
 
-Crucially, I propose we augment these standard practices by integrating three key types of automated scanning tools directly into the workflows which we can either hire a vendor such as Wiz or do open-source. These tools will empower us to "shift security left," catching and remediating potential issues early in the development process rather than late in production.
+Crucially, I propose we augment these standard practices by integrating three key types of automated scanning tools directly into the workflows which we can either hire a vendor or find an open-source option. These tools will empower us to "shift security left," catching and remediating potential issues early in the development process rather than late in production.
 
 ### Application Vulnerability Scanner (SAST/DAST)
 Application Vulnerability Scanner: By automatically scanning the source code (Static Analysis - SAST) and running applications (Dynamic Analysis - DAST) with every build, we can proactively identify and fix common security flaws like injection attacks, cross-site scripting, and insecure authentication before they ever reach users.
