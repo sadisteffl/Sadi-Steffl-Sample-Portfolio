@@ -1,6 +1,6 @@
 # Secure Coding Standard for Developers
 
-As engineers at Wiz, they are first line of defense for their security. Writing secure code is not a separate task - it is a fundamental part of writing high-quality code.
+Engineers are first line of defense for their security. Writing secure code is not a separate task - it is a fundamental part of writing high-quality code.
 
 This document provides the essential security standards that all developers are expected to follow. Adhering to these guidelines helps us:
 
