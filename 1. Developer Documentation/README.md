@@ -1,10 +1,10 @@
 # The Importance of Our Internal Developer Standards
 
-This repository and the internal developer portal serve as the single source of truth for all engineering standards at Wiz, covering both application development and infrastructure management.
+This repository and the internal developer portal serve as the single source of truth for all engineering standards, covering both application development and infrastructure management.
 
 Posting and maintaining these standards is critical for several key reasons:
 
-1. Ensuring Consistency and Quality: When everyone follows the same playbook, Wiz builds a more cohesive, predictable, and high-quality product. It eliminates ambiguity and ensures that best practices are applied uniformly across all teams.
+1. Ensuring Consistency and Quality: When everyone follows the same playbook, it builds a more cohesive, predictable, and high-quality product. It eliminates ambiguity and ensures that best practices are applied uniformly across all teams.
 
 2. Accelerating Onboarding and Development: New engineers can become productive significantly faster when they have a clear, centralized resource that outlines the technology stack, coding patterns, security requirements, and deployment processes.
 

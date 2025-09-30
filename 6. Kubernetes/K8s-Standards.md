@@ -4,7 +4,7 @@ A comprehensive guide to Kubernetes best practices, ISO 27001 & SOC 2 compliance
 
 ## Kubernetes Best Practices Controls
 
-This section outlines foundational controls for securing  Kubernetes environment. There are many options to managaing the fleet either with open source such as Kyvernno or a vendor such as Wiz.
+This section outlines foundational controls for securing  Kubernetes environment. There are many options to managaing the fleet either with open source such as Kyvernno or a vendor. 
 
 ### Cluster & API Server Security
 
@@ -39,7 +39,7 @@ This section outlines foundational controls for securing  Kubernetes environment
     * Don't store secrets in config files or environment variables.
     * Use Kubernetes Secrets with encryption at rest enabled.
     * Consider a dedicated secrets management solution (e.g., HashiCorp Vault).
-    * Again, this is also brought up in CI/CD to stop ahead but also would reccommend some sort of vendor such as like Wiz to insure the integrity ofour code even after the pushes. 
+    * Again, this is also brought up in CI/CD to stop ahead but also would reccommend some sort of vendor to insure the integrity ofour code even after the pushes. 
 * **Resource Management**:
     * Define resource requests and limits for all pods to prevent DoS attacks.
     * Use namespaces to isolate resources and environments.
