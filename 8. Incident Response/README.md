@@ -2,7 +2,7 @@
 
 ## 1. Introduction and Purpose
 
-This document outlines the plan and procedures for Wiz as an example to manage and respond to information security incidents. The purpose of this plan is to ensure a swift, effective, and coordinated response to limit the impact of any security breach, minimize disruption to business operations, and reduce financial and reputational damage. This plan applies to all employees, contractors, and third-party vendors who have access to Wiz's information systems.
+This document outlines the plan and procedures for companies as an example to manage and respond to information security incidents. The purpose of this plan is to ensure a swift, effective, and coordinated response to limit the impact of any security breach, minimize disruption to business operations, and reduce financial and reputational damage. This plan applies to all employees, contractors, and third-party vendors who have access to information systems.
 
 ---
 
