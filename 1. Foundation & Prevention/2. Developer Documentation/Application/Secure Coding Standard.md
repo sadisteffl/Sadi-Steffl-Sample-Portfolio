@@ -4,7 +4,7 @@ Engineers are first line of defense for their security. Writing secure code is n
 
 This document provides the essential security standards that all developers are expected to follow. Adhering to these guidelines helps us:
 
-1. Protect  Customers and Data: Preventing breaches is the most critical responsibility.
+1. Protect Customers and Data: Preventing breaches is the most critical responsibility.
 
 2. Build Resilient Products: Secure applications are more robust and less prone to unexpected failures.
 
@@ -29,7 +29,7 @@ Relevant Compliance: SOC 2: CC6.1; ISO 27001: A.9.4.1
 3. Input Validation and Output Encoding
 DO validate all incoming data for type, length, format, and range on the server-side.
 
-4. DOuse parameterized queries or prepared statements to prevent SQL injection. Never construct database queries by concatenating strings.
+4. DO use parameterized queries or prepared statements to prevent SQL injection. Never construct database queries by concatenating strings.
 
 5. DO properly encode all data before rendering it in a user's browser to prevent Cross-Site Scripting (XSS). Use the encoding functions provided by your framework.
 Relevant Compliance: SOC 2: CC7.2; ISO 27001: A.14.2.5
